@@ -1,0 +1,178 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color:#3D087B ;
+}
+.main_container{
+    width:100vw;
+    height:90vh;
+    display: flex;
+    padding: 20px 100px 0px 100px;
+}
+#menu_box{
+  background-color: white;
+  border-radius:10px; 
+  width:40vw;
+  margin:20px 10px 10px 0px;
+}
+ .line
+ {
+  margin:0px 16px;
+  width:0px;
+  height:22px;
+  border:1px solid black;
+}
+
+#message_one{
+    background-color:#EDEDED ;
+    width:40vw;
+    border-radius:10px;
+    padding: 20px;
+    margin:20px 0px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 28px;
+    font-weight:bolder;
+    opacity: 60%;
+    
+}
+
+.same-select{
+    width:350px;
+    color: #400b7d;
+    margin:0px 0px 0px 40px;
+   
+    
+}
+.selector{
+    width:300px;
+    text-align: center;
+}
+
+
+.container_messages{
+    width:40vw;
+    display: flex;
+   
+}
+#button{
+   width:250px;
+    background:linear-gradient(to right,#6E54EC,#CB52F8,#FC5EFF);
+    border-radius:5px;
+    text-align: center;
+    padding:20px 0px;
+    font-size: 24px;
+    height: 5rem;
+    border: none;
+
+}
+#button:hover{
+    background:linear-gradient(to right,#FC5EFF,#CB52F8,#6E54EC);
+   
+   
+}
+#button:hover span{
+    display: none;
+}
+#button:hover:before {
+    content: "Party Time!"
+  }
+
+#related_message{
+   width:300px;
+    border-radius: 10px;
+    background-color: white;
+    color:#F25CFE;
+    opacity: 50%;
+    height: 10rem;
+    margin-left:10px;
+    text-align: center;
+    box-sizing: border-box;
+   padding-top: 40px;
+   font-size: 20px;
+   
+}
+
+#desk_time{
+    position: relative;
+}
+#current_timeMain{
+    padding: 1rem;
+    margin: 1rem;
+    width: 40vw;;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-evenly;
+    background-color: white;
+    z-index: 3;
+}
+#inside_box1{
+    height: 40px;
+    width: 70%;
+    border-radius: 10px;
+    background-color: #d3c7e1;
+    position: absolute;
+    top: 85px;
+    left:15%;
+    z-index: 1;
+    opacity: 50%;
+}
+#inside_box2{
+    height: 40px;
+    width: 60%;
+    border-radius: 10px;
+    background-color: #6a4199;
+    position: absolute;
+    top: 95px;
+    left: 20%;
+    z-index: 0;
+}
+
+#current_timeMain span{
+    font-size: 25px;
+}
+.common_Box{
+    height: 70px;
+    width: 70px;
+    padding:0.3rem ;
+    color: #894ba3;
+    background-color: #f6e2ff;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ap{
+    background: url(./assets/Duration.png);
+    color: white;
+}
+#Message_two{
+    height: 5rem;
+    width: 100%;
+    background-color: white;
+    margin: 3rem 0rem 0rem 1rem;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 25px;
+    color:#8E53F0 ;
+    box-sizing: border-box;
+}
+#rel_images{
+    height: 21rem;
+    width: 100%;
+    background-color: white;
+    margin: 1rem;
+    border-radius: 10px;
+    background: url("./assets/display.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+   
+  
+    
+   
+}
