@@ -1,8 +1,8 @@
 function clock(){
-    var time= new Date();
-    var hour=time.getHours();
-    var mint=time.getMinutes();
-    var sec=time.getSeconds();
+    let time= new Date();
+    let hour=time.getHours();
+    let mint=time.getMinutes();
+    let sec=time.getSeconds();
 
 
 
@@ -23,57 +23,59 @@ setInterval(clock);
 
 function valuediv1(){
     // for wakeup
-    var values1=document.getElementById("wake-select");
-    var valuesMsg1=values1.options[values1.selectedIndex].text;
+    let values1=document.getElementById("wake-select");
+    let valuesMsg1=values1.options[values1.selectedIndex].text;
     document.getElementById("valueMsg1").innerHTML="Wake-Up Time: " + valuesMsg1;
 
 }
 function valuediv2(){
         // for party
-        var values2=document.getElementById("lunch-select");
-        var valuesMsg2=values2.options[values2.selectedIndex].text;
+        let values2=document.getElementById("lunch-select");
+        let valuesMsg2=values2.options[values2.selectedIndex].text;
         document.getElementById("valueMsg2").innerHTML="Lunch Time: " + valuesMsg2;
 }
 function valuediv3(){
     // for nap
-    var values3=document.getElementById("nap-select");
-    var valuesMsg3=values3.options[values3.selectedIndex].text;
+    let values3=document.getElementById("nap-select");
+    let valuesMsg3=values3.options[values3.selectedIndex].text;
     document.getElementById("valueMsg3").innerHTML="Nap Time: " + valuesMsg3;
 }
 function valuediv4(){
     // for night
-    var values2=document.getElementById("night-select");
-    var valuesMsg2=values2.options[values2.selectedIndex].text;
+    let values2=document.getElementById("night-select");
+    let valuesMsg2=values2.options[values2.selectedIndex].text;
     document.getElementById("valueMsg4").innerHTML="Night Time: " + valuesMsg2;
 }
 
 function settime(){
-    var i = document.getElementById("wake-select").value;
-    var j = document.getElementById("lunch-select").value;
-    var k = document.getElementById("nap-select").value;
-    var l = document.getElementById("night-select").value;
-    var hourr=new Date().getHours();
+    let one = document.getElementById("wake-select").value;
+    let two= document.getElementById("lunch-select").value;
+    let three= document.getElementById("nap-select").value;
+    let four = document.getElementById("night-select").value;
+    let hourr=new Date().getHours();
+    
 
-    if(i== hourr){
+    if(one == hourr){
 
-        document.getElementById("rel_images").style.backgroundImage= "url(./assets\curtains.png)";
-        document.getElementById("message_one").innerHTML="WakeUp and See The Sun-Shine";
+         document.getElementById("rel_images").style.backgroundImage= "url(./assets/curtains.png)";
+         document.getElementById("message_one").innerHTML="WakeUp and See The Sun-Shine";
+       
     }
-    else if(j==hourr){
-        document.getElementById("rel_images").style.backgroundImage= "url(./assets\party.png)";
+    else if(two==hourr){
+        document.getElementById("rel_images").style.backgroundImage= "url(./assets/party.png)";
         document.getElementById("message_one").innerHTML="Let's make a Party";
     }
-    else if(k==hourr){
-        document.getElementById("rel_images").style.backgroundImage= "url(./assets\goodEvening.png)";
+    else if(three==hourr){
+        document.getElementById("rel_images").style.backgroundImage= "url(./assets/goodEvening.png)";
         document.getElementById("message_one").innerHTML="it's time to tea";
     }
-    else if(l==hourr){
-        document.getElementById("rel_images").style.backgroundImage= "url(./assets\Night.png)";
+    else if(four==hourr){
+        document.getElementById("rel_images").style.backgroundImage= "url(./assets/Night.png)";
         document.getElementById("message_one").innerHTML="Relax And Take Rest!!";
     }
     else{
-        document.getElementById("rel_images").style.backgroundImage= "url(./assets\display.webp)";
-        document.getElementById("message_one").innerHTML="Set Alaram!!";
+        document.getElementById("rel_images").style.backgroundImage= "url(./assets/display.webp)";
+        document.getElementById("message_one").innerHTML="SET THE ALARAM!!";
 
     }
 
@@ -89,10 +91,10 @@ function msg2(){
     console.log(hrr);
 
  if(hrr>=4 && hrr<12){
-    document.getElementById("Message_two").innerHTML="Just know that you always bring out <br> the best in me. Good morning, sunshine!";
+    document.getElementById("Message_two").innerHTML="The day will be what you make it,so rise the sun, and burn, Good morning, sunshine!";
 }
 else if(hrr>=12 && hrr<16){
-    document.getElementById("Message_two").innerHTML="What a beautiful day. Try to <br> leave work early to enjoy this wonderful day.";
+    document.getElementById("Message_two").innerHTML="Work Hard,Believe in yourslef";
 }
 else if(hrr>=16 && hrr<20){
   

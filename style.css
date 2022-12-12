@@ -4,19 +4,35 @@
 }
 body{
     background-color:#3D087B ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#grid_item1{
+    height: 100vh;
+    padding:2em;
+}
+#grid_item2{
+    padding: 2em;
 }
 .main_container{
-    width:100vw;
-    height:90vh;
-    display: flex;
-    padding: 20px 100px 0px 100px;
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 2em;
+    margin-right: 2em;
+    }
+
+label{
+    margin-left: 2em;
+    font-size: 20px;
+    color: #3D087B;
 }
 #menu_box{
   background-color: white;
-  border-radius:10px; 
-  width:40vw;
-  margin:20px 10px 10px 0px;
-}
+  border-radius:1em;
+  margin-bottom: 1em;
+  width:100%; 
+ }
+
  .line
  {
   margin:0px 16px;
@@ -26,46 +42,62 @@ body{
 }
 
 #message_one{
-    background-color:#EDEDED ;
-    width:40vw;
-    border-radius:10px;
-    padding: 20px;
+    background-color:grey;
+    width:100%;
+    margin:1em 0em;
+    border-radius:0.4em;
+    padding:0.5em 0em;
+    font-size: 2em;
     margin:20px 0px;
     text-align: center;
-    box-sizing: border-box;
-    font-size: 28px;
     font-weight:bolder;
-    opacity: 60%;
+    color: #F25CFE;
     
 }
 
-.same-select{
-    width:350px;
+ .same-select{
+    width: 40%;
+    margin-left: 2em;
+    font-size: 20px;
     color: #400b7d;
-    margin:0px 0px 0px 40px;
-   
-    
+  
+  
 }
-.selector{
-    width:300px;
-    text-align: center;
+#wake-select{
+    margin-left: 1em;
 }
+#lunch-select{
+  margin-left:  2.6em;
+}
+#nap-select{
+    margin-left:  3.5em;
+}
+#night-select{
+    margin-left:  3.1em;
+}
+
+
+
 
 
 .container_messages{
-    width:40vw;
+    
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
    
 }
 #button{
-   width:250px;
+   width:10em;
     background:linear-gradient(to right,#6E54EC,#CB52F8,#FC5EFF);
     border-radius:5px;
     text-align: center;
     padding:20px 0px;
     font-size: 24px;
-    height: 5rem;
+    font-weight: bold;
+    height: 2.4em;
     border: none;
+    color: white;
 
 }
 #button:hover{
@@ -81,98 +113,206 @@ body{
   }
 
 #related_message{
-   width:300px;
+    width:52%;
     border-radius: 10px;
     background-color: white;
     color:#F25CFE;
-    opacity: 50%;
-    height: 10rem;
-    margin-left:10px;
+   height: 7em;
+    margin-bottom:1em;
     text-align: center;
     box-sizing: border-box;
-   padding-top: 40px;
-   font-size: 20px;
-   
-}
+    padding: 1em;
+    font-size: 20px;
+    opacity: 50%;
+   }
 
-#desk_time{
-    position: relative;
-}
+
 #current_timeMain{
-    padding: 1rem;
-    margin: 1rem;
-    width: 40vw;;
+    width: 100%;
+    height: 5em;
+    flex-wrap: wrap;
     border-radius: 10px;
     display: flex;
     align-items: center;
+    text-align: center;
     position: relative;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: white;
-    z-index: 3;
+    z-index: 2;
+    padding:1em 0em ;
 }
+
 #inside_box1{
-    height: 40px;
-    width: 70%;
+    display: relative;
+    height: 4em;
+    margin-top: -3em;
+    width: 80%;
+    margin: auto;
     border-radius: 10px;
     background-color: #d3c7e1;
-    position: absolute;
-    top: 85px;
-    left:15%;
-    z-index: 1;
+    z-index: -1;
     opacity: 50%;
 }
+
 #inside_box2{
-    height: 40px;
+    display: relative;
+    height: 4em;
+    margin-top: -3em;
     width: 60%;
+    margin: auto;
+    margin-top: -3em;
     border-radius: 10px;
-    background-color: #6a4199;
-    position: absolute;
-    top: 95px;
-    left: 20%;
-    z-index: 0;
+    background-color: white;
+    z-index: -1;
+    opacity: 20%;
 }
 
 #current_timeMain span{
     font-size: 25px;
 }
+
 .common_Box{
-    height: 70px;
-    width: 70px;
-    padding:0.3rem ;
+    height: 70%;
+    width: 10%;
     color: #894ba3;
     background-color: #f6e2ff;
     font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    }
+
 #ap{
     background: url(./assets/Duration.png);
     color: white;
-}
+    }
+
 #Message_two{
-    height: 5rem;
     width: 100%;
     background-color: white;
-    margin: 3rem 0rem 0rem 1rem;
+    margin-top:2em;
     border-radius: 10px;
     text-align: center;
-    padding-top: 25px;
+    padding:1em;
     color:#8E53F0 ;
     box-sizing: border-box;
+    font-size: 24px;
+    font-weight: bold;
 }
+
 #rel_images{
-    height: 21rem;
+    height: 24em;
     width: 100%;
     background-color: white;
-    margin: 1rem;
+    margin-top: 1rem;
     border-radius: 10px;
     background: url("./assets/display.webp");
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
-   
+}
+#image_logo{
+    height: 4em;
+}
+
+@media only screen and (max-width: 1080px) and (min-width: 601px) {
+    #image_clock  {
+        margin-bottom: 15em;
+    }
+    #desk_time{
+        position: absolute;
+        top: 9%;
+        width: 100%;
+    }
+    .main_container{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+        grid-gap: 2em;
+        width: 100%;
+        height: auto;
+    }
+    #grid_item1{
+        width:100%;
+        height: 42em;
+        grid-column: 1;
+       
+    }
+    #grid_item2{
+        
+        width:100%;
+        margin-top: 10em;
+        grid-column: 1;
+       
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    #image_clock  {
+        margin-bottom: 14em;
+    }
+    #desk_time {
+        position: absolute;
+        top: 15%;
+        width: 100%;
+    }
+    .main_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+        width: 100%;
+        height: auto;
+        }
+    #grid_item1 {
+        width:100%;
+        
+        grid-column: 1;
+        
+    }
+    #grid_item2{
+        width:100%;
+        grid-column: 1;
+        
+        margin-top: 14em;
+    }
+    .container_messages{
+        flex-direction: column;
+    }
+    #button, #related_message{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 1em;
+    }
+    #Message_two {
+        font-size: 0.8em;
+    }
   
+    #wake-select{
+         margin-left: 3.6em;
+         width: 60%;
+        
+        }
+        #lunch-select{
+            margin-left: 3.6em;
+            width: 60%;
+        }
+        #nap-select{
+            margin-left: 3.6em;
+            width: 60%;
+        }
+
+        #night-select  {
+            margin-left: 3.6em;
+            width: 60%;
+        }
+ 
+
+    #rel_images{
+        width: 90%;
+        margin: auto;
+        margin-top: 1em;
+    }
+
     
-   
 }
